@@ -354,6 +354,8 @@ def main():
         self_slimming_coefs = np.load(training_args.self_slimming_coef_file)
         inter_slimming_coefs = np.load(training_args.inter_slimming_coef_file)
 
+        choose_slimming_step(all_steps, inter_slimming_coefs, logger, model, my_args, self_slimming_coefs,
+                             training_args)
 
 
 # if training_args.do_train:
